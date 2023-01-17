@@ -1,0 +1,54 @@
+<section class="pricing-area mt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xxl-6 col-xl-7 col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="mb-3 fw-bold">Search Employee</h2>
+          <p class="text-lg mb-5">
+            Morem ipsum dolor sit amet consectetur, adipisicing elit. Illum quam
+            suscipit distinctio optio, quaerat consequatur labore pariatur
+            rerum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xxl-6 col-xl-7 col-lg-8 mb-3">
+        <!-- Form starts -->
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+          <div class="group-gap option-field">
+            <div class="d-block">
+              <div class="mb-3">
+                <select
+                  class="custom-select form-select"
+                  (change)="changeCity($event)"
+                  formControlName="cityName"
+                >
+                  <option value="">Please select the option</option>
+                  <option *ngFor="let city of City" [ngValue]="city">
+                    {{ city }}
+                  </option>
+                </select>
+
+                <!-- error block -->
+                <div class="invalid-feedback" *ngIf="isSubmitted && cityName">
+                  <sup>*</sup>Please enter your Employee name
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-danger btn-lg btn-block">
+            Submit
+          </button>
+        </form>
+        <!-- Form ends -->
+      </div>
+    </div>
+  </div>
+</section>
+<app-search-employee-details></app-search-employee-details>

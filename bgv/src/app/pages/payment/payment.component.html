@@ -1,0 +1,269 @@
+<nav class="navbar navbar-expand-lg px-0 py-2 p-3 shadow-sm rounded">
+  <div class="container-xl">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <h3>BVG</h3>
+      <!-- <img
+          src="https://preview.webpixels.io/web/img/logos/clever-light.svg"
+          class="h-8"
+          alt="..."
+        /> -->
+    </a>
+    <!-- Navbar toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!-- Nav -->
+      <!-- <div class="navbar-nav mx-lg-auto">
+        <a class="nav-item nav-link active" href="#" aria-current="page"
+          >Home</a
+        >
+        <a class="nav-item nav-link" href="#">Product</a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a>
+      </div> -->
+      <!-- Action -->
+      <!-- <div class="d-flex align-items-lg-center mt-3 mt-lg-0 search-btn">
+        <button type="button" class="btn mr-md-2 mb-md-0 mb-2">
+          <i class="bi bi-search mr-1"></i> Search <i class=""></i>
+        </button>
+      </div> -->
+    </div>
+  </div>
+</nav>
+<section class="pricing-area mt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xxl-6 col-xl-7 col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="mb-3 fw-bold">Our Pricing</h2>
+          <p class="text-lg mb-5">
+            Morem ipsum dolor sit amet consectetur, adipisicing elit. Illum quam
+            suscipit distinctio optio, quaerat consequatur labore pariatur
+            rerum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-9 col-sm-11">
+        <div class="box-2">
+          <div class="box-inner-2">
+            <div>
+              <p class="fw-bold">Payment Details</p>
+              <p class="dis mb-3">
+                Complete your purchase by providing your payment details
+              </p>
+            </div>
+            <form action="">
+              <div class="mb-3">
+                <p class="dis fw-bold mb-2">Email address</p>
+                <input class="form-control" type="email" />
+              </div>
+              <div class="mb-3">
+                <p class="dis fw-bold mb-2">Contact Number</p>
+                <input class="form-control" type="number" />
+              </div>
+              <div>
+                <p class="dis fw-bold mb-2">Card details</p>
+                <div
+                  class="d-flex align-items-center justify-content-between card-atm border rounded"
+                >
+                  <div class="fab fa-cc-visa ps-3"></div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Card Details"
+                  />
+                  <div class="d-flex w-50">
+                    <input
+                      type="text"
+                      class="form-control px-0"
+                      placeholder="MM/YY"
+                    />
+                    <input
+                      type="password"
+                      maxlength="3"
+                      class="form-control px-0"
+                      placeholder="CVV"
+                    />
+                  </div>
+                </div>
+                <div class="my-3 cardname">
+                  <p class="dis fw-bold mb-2">Cardholder name</p>
+                  <input class="form-control" type="text" />
+                </div>
+                <div class="address">
+                  <p class="dis fw-bold mb-3">Billing address</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected hidden>India</option>
+                    <option value="1">India</option>
+                    <!-- <option value="2">Australia</option>
+                    <option value="3">Canada</option> -->
+                  </select>
+                  <div class="d-flex">
+                    <input
+                      class="form-control zip"
+                      type="text"
+                      placeholder="ZIP"
+                    />
+                    <input
+                      class="form-control state"
+                      type="text"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div class="my-3">
+                    <p class="dis fw-bold mb-2">VAT Number</p>
+                    <div class="inputWithcheck">
+                      <input
+                        class="form-control"
+                        type="text"
+                        value="GB012345B9"
+                      />
+                      <span class="bi bi-check-circle"></span>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column dis">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
+                      <p>Subtotal</p>
+                      <p><span class="bi bi-currency-rupee"></span>1234.00</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
+                      <p>VAT<span>(xyz%)</span></p>
+                      <p><span class="bi bi-currency-rupee"></span>2.80</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
+                      <p class="fw-bold">Total</p>
+                      <p class="fw-bold">
+                        <span class="bi bi-currency-rupee"></span>35.80
+                      </p>
+                    </div>
+                    <div class="btn btn-primary mt-2">
+                      Pay<span class="bi bi-currency-rupee px-1"></span>35.80
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-9">
+        <div class="pricing-style-two shadow bg-body rounded">
+          <!-- <div class="pricing-baloon">
+            <img class="bi bi-currency-rupee" alt="Payment" />
+          </div> -->
+          <div class="pricing-header">
+            <h5 class="sub-title">Search</h5>
+            <span class="price bi bi-currency-rupee">xyz</span>
+            <h5 class="year">per Search</h5>
+          </div>
+          <div class="pricing-list mb-5">
+            <ul>
+              <li>
+                <i class="lni lni-checkmark-circle"></i> Lorem, ipsum dolor.
+              </li>
+              <li>
+                <i class="lni lni-checkmark-circle"></i> Lorem ipsum dolor sit.
+              </li>
+              <li>
+                <i class="lni lni-checkmark-circle"></i> Lorem, ipsum dolor.
+                team
+              </li>
+              <li><i class="lni lni-checkmark-circle"></i> Awesome Support</li>
+            </ul>
+          </div>
+          <!-- <div class="pricing-btn rounded-buttons text-center">
+            <a class="btn primary-btn rounded-full" href="javascript:void(0)">
+              GET STARTED
+            </a>
+          </div> -->
+          <div class="bottom-shape mt-5">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 350 112.35"
+            >
+              <defs>
+                <style>
+                  .color-2 {
+                    fill: #0067f4;
+                    isolation: isolate;
+                  }
+
+                  .cls-1 {
+                    opacity: 0.1;
+                  }
+
+                  .cls-2 {
+                    opacity: 0.2;
+                  }
+
+                  .cls-3 {
+                    opacity: 0.4;
+                  }
+
+                  .cls-4 {
+                    opacity: 0.6;
+                  }
+                </style>
+              </defs>
+              <title>bottom-part1</title>
+              <g>
+                <g data-name="Group 747">
+                  <path
+                    data-name="Path 294"
+                    class="cls-1 color-2"
+                    d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                    transform="translate(0 0)"
+                  />
+                  <path
+                    data-name="Path 297"
+                    class="cls-2 color-2"
+                    d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                    transform="translate(0 0)"
+                  />
+                  <path
+                    data-name="Path 296"
+                    class="cls-3 color-2"
+                    d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                    transform="translate(0 0)"
+                  />
+                  <path
+                    data-name="Path 295"
+                    class="cls-4 color-2"
+                    d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                    transform="translate(0 0)"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <!-- single pricing -->
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</section>

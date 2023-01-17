@@ -1,0 +1,305 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background: #eeee; */
+}
+
+.navbar {
+  background-color: transparent;
+  font-color: red;
+}
+
+.navbar-nav a {
+  color: red;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.search-btn button {
+  color: white;
+  background: #8e00f6;
+  font-weight: 600;
+}
+
+.search-btn button:hover {
+  color: white;
+  background: #6200aa;
+}
+
+.box-2 {
+  max-width: 450px;
+  padding: 10px 40px;
+}
+
+.box-2 .box-inner-2 input.form-control {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.box-2 .box-inner-2 .inputWithIcon {
+  position: relative;
+}
+
+.box-2 .box-inner-2 .inputWithIcon span {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+
+.box-2 .box-inner-2 .inputWithcheck {
+  position: relative;
+}
+
+.box-2 .box-inner-2 .inputWithcheck span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  top: 6px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #7700ff;
+}
+
+.border:focus-within {
+  border: 1px solid #7700ff !important;
+}
+
+.box-2 .card-atm .form-control {
+  border: none;
+  box-shadow: none;
+}
+
+.form-select {
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.address .form-control.zip {
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.address .form-control.state {
+  border-radius: 0;
+  border-bottom-right-radius: 10px;
+}
+
+.box-2 .box-inner-2 .btn.btn-outline-primary {
+  width: 120px;
+  padding: 10px;
+  font-size: 11px;
+  padding: 0% !important;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: 600;
+}
+
+.box-2 .box-inner-2 .btn.btn-primary {
+  background-color: #7700ff;
+  color: whitesmoke;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+}
+
+.box-2 .box-inner-2 .btn.btn-primary:hover {
+  background-color: #7a34ca;
+}
+
+.box-2 .box-inner-2 .btn.btn-primary .fas {
+  font-size: 13px !important;
+  color: whitesmoke;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 250px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-control-prev {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev:hover .fas.fa-arrow-left {
+  transform: translateX(-5px);
+}
+
+.carousel-control-next {
+  transform: translateX(50%);
+  opacity: 1;
+}
+
+.carousel-control-next:hover .fas.fa-arrow-right {
+  transform: translateX(5px);
+}
+
+.fas.fa-arrow-left,
+.fas.fa-arrow-right {
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #f8f9fa;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform-origin: center;
+  opacity: 1;
+}
+
+.fas,
+.fab {
+  color: #6d6c6d;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.pricing-two {
+  padding: 100px 0;
+}
+.pricing-style-two {
+  /* box-shadow: var(--shadow-3); */
+  padding: 30px 30px 40px 30px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 50px;
+}
+.pricing-style-two .sub-title {
+  color: #1d1d1d;
+  position: relative;
+  padding-bottom: 8px;
+}
+.pricing-style-two .sub-title::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #155bd5;
+  margin: 0 auto;
+}
+.pricing-style-two .price {
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-top: 20px;
+  color: #1d1d1d;
+}
+.pricing-style-two .year {
+  color: #155bd5;
+  margin-top: 3px;
+}
+.pricing-style-two .pricing-baloon {
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 156px;
+}
+.pricing-style-two .pricing-list {
+  margin-top: 40px;
+}
+.pricing-style-two .pricing-list li {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+.pricing-style-two .pricing-list li i {
+  color: #155bd5;
+  margin-right: 8px;
+}
+.pricing-style-two .pricing-btn {
+  margin-top: 42px;
+}
+.pricing-style-two .bottom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 101%;
+  z-index: -1;
+}
+
+/* @media (max-width:768px) {
+  .container {
+      max-width: 700px;
+      margin: 10px auto;
+  }
+
+  .box-1,
+  .box-2 {
+      max-width: 600px;
+      padding: 20px 90px;
+      margin: 20px auto;
+  }
+
+} */
+
+/* @media (max-width:426px) {
+
+  .box-1,
+  .box-2 {
+      max-width: 400px;
+      padding: 20px 10px;
+  }
+
+  ::placeholder {
+      font-size: 9px;
+  }
+} */
