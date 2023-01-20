@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-const Upload = require("./models/uploadFile");
+const Upload = require("./manage/uploadFile");
 
 const app = express();
 require("dotenv/config");
