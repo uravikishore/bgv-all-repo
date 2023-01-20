@@ -13,6 +13,10 @@ const url = process.env.URL;
 app.use(morgan("tiny"));
 app.use(express.json());
 
+//Routers
+const userRouter = require("./routers/userRouters");
+app.use(url + "/users", userRouter);
+
 app.get(url, (req, res) => {
   const upload = req.body;
   res.send(upload);
