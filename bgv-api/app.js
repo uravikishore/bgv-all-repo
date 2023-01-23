@@ -1,7 +1,8 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-const Upload = require("./manage/uploadFile");
+//const Upload = require("./manage/uploadFile");
+const dataRouter = require("./routers/uploadFIleRouters");
 
 const app = express();
 require("dotenv/config");
@@ -16,6 +17,7 @@ app.use(express.json());
 //Routers
 const userRouter = require("./routers/userRouters");
 app.use(url + "/users", userRouter);
+app.use(url + "/data", dataRouter);
 
 app.get(url, (req, res) => {
   const upload = req.body;
